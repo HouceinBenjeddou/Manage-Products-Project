@@ -1,0 +1,362 @@
+@import url(https://fonts.google.com/specimen/Be+Vietnam);
+:root {
+    --primary-color: Bright Red: hsl(12, 88%, 59%);
+    --secondary-color:Dark Blue: hsl(228, 39%, 23%);
+    --hover-color:hsla(12, 88%, 59%, 0.651);
+    --p-color:hsl(14, 18%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 800px -240px;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.navbar {
+    background-color:  transparent;
+    height: 100px;
+    padding: 1em;
+}
+
+.navbar ul {
+    cursor: pointer;
+    display: flex;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    padding: 15px;
+    margin: 0 5px;
+    align-items: center;
+}
+
+.navbar a:hover {
+    color: var(--hover-color);
+    transition: 0.225s;
+}
+.navbar img {
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    position: relative;
+}
+/* utilities */
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:0 40px;
+}
+.btn {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 11px 25px;
+    background-color: hsl(12, 88%, 59%);
+    color: hsl(13, 100%, 96%);
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+    justify-self: center;
+}
+
+.btn:hover  {
+    background-color: var(--hover-color);
+    transition: 0.3s;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* hero-section */
+
+.hero-section {
+    max-width: 1150px;
+    height: 700px;
+}
+
+.hero-section img {
+    z-index: 99;
+    position: relative;
+    right: -730px;
+    margin: 5px;
+}
+
+.hero-section h1 {
+    font-size: 3.2em;
+    font-weight: bold;
+    text-align: center justify;
+    line-height: 1.2;
+    position: relative;
+    left: 180px;
+    top: -450px;
+    width: 500px;
+    color: hsl(228, 39%, 23%)
+}
+
+.hero-section p {
+    color: var(--p-color);
+    font: 500;
+    text-align: justify;
+    position: relative;
+    text-justify: inter-word;
+    left: 180px;
+    top: -400px;
+    width: 33%;
+}
+
+.hero-section .second-child {
+    position: relative;
+    top: -380px;
+    left: 183px;
+}
+
+/* second-hero */
+
+.second-container h1{
+    font-size: 3.2em;
+    font-weight: bold;
+    text-align: center justify;
+    line-height: 1.2;
+    position: relative;
+    left: 180px;
+    width: 500px;
+    color: hsl(228, 39%, 23%);
+}
+
+.second-container {
+    max-width: 100%;
+    height: 900px;
+}
+
+.second-container p {
+    width: 33%;
+    color: var(--p-color);
+    position: relative;
+    left: 180px;
+}
+
+.second-container img {
+    z-index: -1;
+    position: relative;
+    background-color: var(--primary-color);
+    top: 100px;
+    left: -450px;
+}
+
+.second-hero .flex-container
+{
+    max-width: 1150px;
+    position: relative;
+    top: -1000px;
+    left: 310px;
+    display: flex;
+    justify-content: center;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+.second-hero .flex-container h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center justify;
+    line-height: 2;
+    position: relative;
+    left: 230px;
+    width: 500px;
+    color: hsl(228, 39%, 23%);
+}
+
+.second-hero .btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    top: -1525px;
+    left: 670px;
+}
+
+/* testimonials */
+
+.testimonials-section {
+    width: max-content;
+    height: 500px;
+}
+
+.testimonials-section ul {
+    width: 1450px;
+    z-index: 99;
+    background-color: var(--primary-color);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+
+}
+
+.testimonials-section h1 {
+    color:hsl(228, 39%, 23%);
+    background-color: var(--primary-color);
+    font-size: 3.2em;
+    font-weight: bold;
+    left: 550px;
+    top: 1450px;
+    text-align: center;
+    line-height: 1.2;
+    z-index: 999;
+    position: absolute;
+    
+}
+
+.testimonials-section .container cite {
+    color: hsl(228, 39%, 23%);
+    position: relative;
+    justify-content: center;
+    top: -138px;
+    font-weight: 700;
+    font-size: 1.6;
+    margin: 25px;
+    padding: 10px;
+}
+
+.testimonials-section blockquote {
+    margin-top: 56px;
+    margin-bottom: 5px;
+    
+}
+
+.testimonials-section li {
+    background: hsl(0, 0%, 98%);
+    color:var(--p-color);
+    text-align: center;
+    padding: 1em 1em;
+    margin: 0 auto 2em auto; 
+    border-top-left-radius: 1em;
+}
+
+.testimonials-section li img {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    margin-top: -4.5em;
+}
+
+.testimonials-section .container .btn {
+    position: relative;
+    z-index: 1000;
+    left: 700px;
+    top: 1950px;
+}
+
+
+.footer-section .second-footer {
+    background-color: black;
+    display: block;
+    max-width: 100%;
+    max-height: min-content;
+    
+}
+
+.footer-container .btn {
+    color: hsl(12, 88%, 59%);
+    background-color: hsl(0, 0%, 98%);
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 12%;
+
+}
+
+.footer-container .btn:hover {
+    background-color: rgb(255, 231, 231);
+    transition: 0.225s;
+}
+
+.footer-container ul {
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-flow: column;
+}
+
+.footer-section .footer-container img {
+    background-color: hsl(12, 88%, 59%);
+    justify-content: center;
+    object-fit: contain;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.footer-section .footer-container  h1{
+    font-size: 2.5em;
+    color: #fff;
+    left: 120px;
+    width: 35%;
+    font-weight: bold;
+    text-align: center justify;
+    line-height: 1.2;
+    position: relative;
+    margin: 1em;
+    padding: 1.2em 0;
+}
+
+#my-btn {
+    color: hsl(12, 88%, 59%);
+    background-color: hsl(0, 0%, 98%);
+    z-index: 1;
+    position: absolute;
+    display: block;
+    margin:0 auto;
+    right: 200px;
+    top: 2350px;
+    font-weight: 550;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+#my-btn:hover {
+    background-color: rgb(255, 231, 231);
+    transition: 0.225s;
+
+}
